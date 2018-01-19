@@ -50,7 +50,7 @@ def enter(num):
         firstname = config['FirstName']
         lastname = config['LastName']
         location = config['Location']
-        email = config['Email']
+        email = ""
 
         suffixtitlel = ['jr', 'jr.', 'JR.', 'JR.', 'SR', 'sr.', 'sr', 'sr.',
                         'snr', 'SNR', 'SNR.', 'jnr', 'JNR', 'JNR.', 'II',
@@ -88,12 +88,12 @@ def enter(num):
         
         print("Name:  " + firstname + " " + lastname)
 
-        prefix = email.split('@')[0]
-        domain = email.split('@')[1]
         number = randint(111, 9999999)
         if number > 9999999:
             number = randint(111, 9999999)
-        email = prefix + str(number) + '@' + domain
+        for x in range(0, 5):
+            email += random.choice(string.ascii_letters)
+        email += str(number) + '@' + config["Email"]
         print("Generated Email:  " + email)
 
         if config['sizegender'] == "male":

@@ -1,8 +1,8 @@
 {
-  "FirstName": "John",
-  "LastName": "Doe",
-  "Email": "random@catchall.email",
-  "Location": "soho or brooklyn",
+  "FirstName": "Richard",
+  "LastName": "Cao",
+  "Email": "rycao.me",
+  "Location": "brooklyn",
   "useproxies": "False",
-  "sizegender": "male or female"
+  "sizegender": "male"
 }
