@@ -1,0 +1,11 @@
+@echo off
+color 03
+echo INSTALLER FOR THE FUTURECRAFT SCRIPT
+echo MUST HAVE PYTHON 3+ INSTALLED
+PAUSE
+pip install requests
+pip install bs4
+cls
+color 02
+echo EVERYTHING HAS BEEN INSTALLED
+PAUSE
