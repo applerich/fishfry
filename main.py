@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup as bs
 import json
+from utils import c_logging, n_logging
 from random import *
 import random
 import re
@@ -56,7 +57,7 @@ def enter(num):
                         'III', '2nd', '3rd']
         suffixtitlenum = randint(0, len(suffixtitlel) - 1)
         suffix = suffixtitlel[suffixtitlenum]
-        typelist = ['1', '2', '3', '4', '5', '6', '7', '8']
+        typelist = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11']
         typenum = randint(0, len(typelist) - 1)
         typee = typelist[typenum]
         if typee == "1":
@@ -104,8 +105,8 @@ def enter(num):
         if config['sizegender'] == "male":
             size = "Men's " + asize
         else:
-            size = "Woman's " + asize
-        print("Choose size " + size)
+            size = "Women's " + asize
+        print("Chose size:  " + size)
 
         if location == "soho":
             kithlocation = "Kith Soho"
@@ -168,7 +169,7 @@ if __name__ == '__main__':
     print("##########################################")
     print("Kith Futurecraft Script")
     print("By XO and Rycao18")
-    print("Wanna buy me a big mac? paypal.me/daddyxd or paypal.me/rycao18")
+    print("Wanna buy me a big mac? paypal.me/rycao18 or paypal.me/daddyxd")
     print("###########################################")
     print("===========================================")
     print("Name: " + config['FirstName'] + " " + config['LastName'])
